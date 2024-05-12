@@ -1,9 +1,19 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
-button.addEventListener(`click`, function() {
-  const addEmployees = prompt(`First Name:`);
-  console.log(addEmployees);
+addEmployeesBtn.addEventListener('click', function() {
+  const addEmployees = prompt('First Name:');
+  // console.log("First Name");
+});
+
+addEmployeesBtn.addEventListener('click', function() {
+    const addEmployees = prompt('Last Name:');
+    // console.log("Last Name");
+});
+
+addEmployeesBtn.addEventListener('click', function() {
+  const addEmployees = prompt('Salary:');
+  // console.log("Salary");
 });
 
 // Collect employee data
@@ -14,7 +24,7 @@ const collectEmployees = {
   salary: 12345,
 }
 
-const collectEmployees = function() {
+const employeeData = function() {
 // TODO: Get user input to create and return an array of employee objects
 }
 
