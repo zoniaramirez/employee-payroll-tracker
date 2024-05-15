@@ -6,15 +6,23 @@ const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
   const employees = [];
 
-  const firstName = prompt('First Name');
-  const lastName = prompt('Last Name');
-  const salary = prompt('Salary');
+  let addEmployees = true;
+
+  while(addEmployees) {
+    const firstName = prompt('First Name');
+    const lastName = prompt('Last Name');
+    const salaryInput = prompt('Salary');
+
+let salary = isNaN(salaryInput) ? 0 : Number(salaryInput);
 
   employees.push({
     firstName: firstName,
     lastName: lastName,
     salary: salary,
-  });
+  })
+
+ addEmployees = confirm("Would you like to continue?");
+}
 
   return employees;
 };
